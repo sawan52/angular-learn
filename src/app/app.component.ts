@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog';
+  title = '                                 ';
+  versionNumber = 12;
+
+  getData(data:string){
+    console.log(data);
+  }
+
+  getName(name: string){
+    alert("My name is " + name);
+  }
+
+  compareValue(){
+    if(this.title.trim() == "blog"){
+      console.log("title length: " + this.title.length);
+      console.log("trim title length: " + this.title.trim().length);
+      alert("Trim worked!");
+    }else{
+      console.log("title length: " + this.title.length);
+      console.log("trim title length: " + this.title.trim().length);
+      alert("Trim did not worked!");
+    }
+  }
 }
+
