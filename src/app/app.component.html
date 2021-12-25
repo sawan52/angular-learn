@@ -2,6 +2,7 @@
 
 <body>
     <h1>Welcome to Angular {{versionNumber}}</h1>
+    <!--
     <app-login></app-login>
     <button (click)="getName('Sawan')">Click Me</button>
     <br><br>
@@ -18,6 +19,13 @@
     <input type="text" placeholder="Input Event ..." #data_id3 (input)="getData(data_id3.value)" />
     <br><br>
     <h2 (mouseover)="getData('Mouse Over event called!')">Mouse Over Event</h2>
+    -->
+
+    <input type="text" #data_id placeholder="Enter something..." name="data" />
+    <br>
+    <button (click)="getData(data_id.value)">Click</button>
+    <br>
+    <p>{{displayVal}}</p>
 </body>
 
 </html>
