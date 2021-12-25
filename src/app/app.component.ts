@@ -11,6 +11,11 @@ export class AppComponent {
   displayVal = '';
   count = 0;
   disable = false;
+  shoow = false;
+
+  changeIfElse(){
+    this.shoow == false ? (this.shoow = true) : (this.shoow = false);
+  }
 
   fieldDisable() {
     this.disable == false ? (this.disable = true) : (this.disable = false);

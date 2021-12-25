@@ -3,6 +3,7 @@
 <body>
 
     <h1 class="heading">Welcome to Angular {{versionNumber}}</h1>
+
     <!--
     <app-login></app-login>
     <button (click)="getName('Sawan')">Click Me</button>
@@ -36,11 +37,19 @@
     <button (click)="counter('minus')">--</button>
     -->
 
+    <!--
     <input type="text" placeholder="Enter value" disabled={{disable}}/>
     <br><br>
     <input type="text" placeholder="Enter value" [disabled]=disable/>
     <br><br>
     <button (click)="fieldDisable()">Enable/Disable</button>
+    -->
+
+    <p *ngIf="shoow; then ifBlock else elseBlock"></p>
+    <ng-template #ifBlock>If Condition</ng-template>
+    <ng-template #elseBlock>Else Condition</ng-template>
+    <br>
+    <button (click)="changeIfElse()">On Click</button>
 </body>
 
 </html>
