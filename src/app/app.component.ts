@@ -9,6 +9,16 @@ export class AppComponent {
   title = '                                 ';
   versionNumber = 12;
   displayVal = '';
+  count = 0;
+  disable = false;
+
+  fieldDisable() {
+    this.disable == false ? (this.disable = true) : (this.disable = false);
+  }
+
+  counter(type: string) {
+    type == 'add' ? this.count++ : this.count--;
+  }
 
   getData(data: any) {
     console.log(data);

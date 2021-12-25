@@ -1,7 +1,8 @@
 <html>
 
 <body>
-    <h1>Welcome to Angular {{versionNumber}}</h1>
+
+    <h1 class="heading">Welcome to Angular {{versionNumber}}</h1>
     <!--
     <app-login></app-login>
     <button (click)="getName('Sawan')">Click Me</button>
@@ -21,11 +22,25 @@
     <h2 (mouseover)="getData('Mouse Over event called!')">Mouse Over Event</h2>
     -->
 
+    <!--
     <input type="text" #data_id placeholder="Enter something..." name="data" />
     <br>
     <button (click)="getData(data_id.value)">Click</button>
     <br>
     <p>{{displayVal}}</p>
+    -->
+
+    <!--
+    <button (click)="counter('add')">++</button>
+    <p class="cc"><b>Counter: {{count}}</b></p>
+    <button (click)="counter('minus')">--</button>
+    -->
+
+    <input type="text" placeholder="Enter value" disabled={{disable}}/>
+    <br><br>
+    <input type="text" placeholder="Enter value" [disabled]=disable/>
+    <br><br>
+    <button (click)="fieldDisable()">Enable/Disable</button>
 </body>
 
 </html>
