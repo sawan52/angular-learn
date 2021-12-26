@@ -6,45 +6,46 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = '                                 ';
   versionNumber = 12;
-  displayVal = '';
-  count = 0;
-  disable = false;
-  shoow = false;
-  color ='blue';
-  day = "Friday";
 
-  changeIfElse(){
-    this.shoow == false ? (this.shoow = true) : (this.shoow = false);
-  }
+  users = ['Sawan', 'Yash', 'Akash', 'Rohit', 'Ravi', 'Satyam'];
 
-  fieldDisable() {
-    this.disable == false ? (this.disable = true) : (this.disable = false);
-  }
-
-  counter(type: string) {
-    type == 'add' ? this.count++ : this.count--;
-  }
-
-  getData(data: any) {
-    console.log(data);
-    this.displayVal = data;
-  }
-
-  getName(name: string) {
-    alert('My name is ' + name);
-  }
-
-  compareValue() {
-    if (this.title.trim() == 'blog') {
-      console.log('title length: ' + this.title.length);
-      console.log('trim title length: ' + this.title.trim().length);
-      alert('Trim worked!');
-    } else {
-      console.log('title length: ' + this.title.length);
-      console.log('trim title length: ' + this.title.trim().length);
-      alert('Trim did not worked!');
-    }
-  }
+  user_detail = [
+    {
+      name: 'Sawan',
+      email: 'Sawan@gmail.com',
+      phone: '8956231400',
+      socialAccounts: ['facebook', 'yahoo', 'gmail'],
+    },
+    {
+      name: 'Yash',
+      email: 'Yash@gmail.com',
+      phone: '7854120325',
+      socialAccounts: ['yahoo', 'facebook', 'gmail'],
+    },
+    {
+      name: 'Akash',
+      email: 'Akash@gmail.com',
+      phone: '1204589600',
+      socialAccounts: ['gmail', 'yahoo', 'facebook'],
+    },
+    {
+      name: 'Rohit',
+      email: 'Rohit@gmail.com',
+      phone: '8562001122',
+      socialAccounts: ['facebook', 'gmail', 'yahoo'],
+    },
+    {
+      name: 'Ravi',
+      email: 'Ravi@gmail.com',
+      phone: '7788554422',
+      socialAccounts: ['facebook', 'yahoo', 'gmail'],
+    },
+    {
+      name: 'Satyam',
+      email: 'Satyam@gmail.com',
+      phone: '9966558844',
+      socialAccounts: ['yahoo', 'facebook', 'gmail'],
+    },
+  ];
 }
