@@ -12,6 +12,8 @@ export class AppComponent {
   count = 0;
   disable = false;
   shoow = false;
+  color ='blue';
+  day = "Friday";
 
   changeIfElse(){
     this.shoow == false ? (this.shoow = true) : (this.shoow = false);

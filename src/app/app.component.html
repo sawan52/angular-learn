@@ -45,11 +45,37 @@
     <button (click)="fieldDisable()">Enable/Disable</button>
     -->
 
+    <!--
     <p *ngIf="shoow; then ifBlock else elseBlock"></p>
     <ng-template #ifBlock>If Condition</ng-template>
     <ng-template #elseBlock>Else Condition</ng-template>
     <br>
     <button (click)="changeIfElse()">On Click</button>
+    -->
+
+    <!--
+    <ng-template [ngIf]="color === 'red'">
+        <h1 style="color: red;">Red Color</h1>
+    </ng-template>
+    <ng-template [ngIf]="color === 'green'">
+        <h1 style="color: green;">Green Color</h1>
+    </ng-template>
+    <ng-template [ngIf]="color === 'blue'">
+        <h1 style="color: blue;">Blue Color</h1>
+    </ng-template>
+    -->
+
+    <div [ngSwitch]="day">
+        <h1 *ngSwitchCase="'Sunday'" style="color: red;">Sunday</h1>
+        <h1 *ngSwitchCase="'Monday'" style="color: blue;">Monday</h1>
+        <h1 *ngSwitchCase="'Tuesday'" style="color: green;">Tuesday</h1>
+        <h1 *ngSwitchCase="'Wednesday'" style="color: yellow;">Wednesday</h1>
+        <h1 *ngSwitchCase="'Thursday'" style="color: skyblue;">Thursday</h1>
+        <h1 *ngSwitchCase="'Friday'" style="color: pink;">Friday</h1>
+        <h1 *ngSwitchCase="'Saturday'" style="color: purple;">Saturday</h1>
+        <h1 *ngSwitchDefault>Unknown Day</h1>
+    </div>
+
 </body>
 
 </html>
