@@ -7,11 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   versionNumber = 12;
-  color = "blue";
-  bgColor = "green";
-
-  updateColor(){
-    this.color = "red";
-    this.bgColor = "blue";
-  }
+  
 }
