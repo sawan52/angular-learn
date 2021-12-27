@@ -2,11 +2,16 @@
 
 <body>
     <h1 class="heading">Welcome to Angular {{versionNumber}}</h1>
-    <p>
-        <ngb-alert [dismissible]="false">
-            <strong>Warning!</strong> Better check yourself, you're not looking too good.
-        </ngb-alert>
-    </p>
+
+    <input type="text" placeholder="Enter new task" [(ngModel)]="clearText" #taskId/>
+    <br/><br/>
+    <button (click)="addNewTask(taskId.value)">Add New Task</button>
+    <br/><br/>
+
+    <ul *ngFor="let item of itemList">
+        <li>{{item.name}} <button (click)="removeTask(item.id)">Remove</button></li>
+    </ul>
+
 </body>
 
 </html>
