@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +7,4 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   versionNumber = 12;
-  userData: any = {};
-
-  getData(data: NgForm) {
-    console.log(data);
-    this.userData = data;
-  }
 }

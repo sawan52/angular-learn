@@ -2,30 +2,11 @@
 
 <body>
     <h1 class="heading">Welcome to Angular {{versionNumber}}</h1>
-
-    <h2>Basic Form</h2>
-    <form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
-        <input type="text" ngModel placeholder="Enter User Name" name="user_name" />
-        <br/><br/>
-        <input type="text" ngModel placeholder="Enter User Email" name="user_email" />
-        <br/><br/>
-        <input type="password" ngModel placeholder="Enter User Password" name="user_password" />
-        <br/><br/>
-        <button>Register</button>
-    </form>
-
-    <ul>
-        <li>
-            <h3>{{userData.user_name}}</h3>
-        </li>
-        <li>
-            <h3>{{userData.user_email}}</h3>
-        </li>
-        <li>
-            <h3>{{userData.user_password}}</h3>
-        </li>
-    </ul>
-
+    <p>
+        <ngb-alert [dismissible]="false">
+            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </ngb-alert>
+    </p>
 </body>
 
 </html>
