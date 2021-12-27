@@ -4,20 +4,9 @@
 
     <h1 class="heading">Welcome to Angular {{versionNumber}}</h1>
 
-    <h3 *ngFor="let x of users">{{x}}</h3>
+    <h2 [style.color]="color" [style.backgroundColor]="bgColor">Dynamic Style Binding</h2>
 
-    <h3 *ngFor="let item of user_detail">{{item.name}} ---- {{item.email}} ---- {{item.phone}}</h3>
-
-    <h1>Nested For Loop</h1>
-    <ul *ngFor="let user of user_detail">
-        <li><b>Name: </b>{{user.name}}</li>
-        <li><b>Email: </b>{{user.email}}</li>
-        <li><b>Phone: </b>{{user.phone}}</li>
-        <li><b>Social Media Accounts:-</b></li>
-        <ul *ngFor="let account of user.socialAccounts">
-            <li>{{account}}</li>
-        </ul>
-    </ul>
+    <button (click)="updateColor()">Change Color</button>
 
 </body>
 
