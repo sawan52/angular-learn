@@ -1,28 +1,28 @@
 form {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 h2 {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 
 button {
-    margin-left: 30px;
+  margin-left: 0px;
 }
 
 section {
-    display: table;
+  display: table;
 }
 
 .example-label {
-    display: table-cell;
-    font-size: 14px;
-    margin-left: 8px;
-    min-width: 120px;
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
 }
 
 .example-button-row {
-    display: table-cell;
-    width: 490px;
-    margin: 8px 8px 8px 0;
+  display: table-cell;
+  width: 490px;
+  margin: 8px 8px 8px 0;
 }

@@ -1,17 +1,13 @@
 <html>
+  <body>
+    <h1 class="heading">Welcome to Angular {{ versionNumber }}</h1>
+    <!--
+    <app-child [item]="data"></app-child>
+    <button (click)="updateChild()">Update Child Value</button>
+    -->
 
-<body>
-    <h1 class="heading">Welcome to Angular {{versionNumber}}</h1>
-
-    <input type="text" placeholder="Enter new task" [(ngModel)]="clearText" #taskId/>
-    <br/><br/>
-    <button (click)="addNewTask(taskId.value)">Add New Task</button>
-    <br/><br/>
-
-    <ul *ngFor="let item of itemList">
-        <li>{{item.name}} <button (click)="removeTask(item.id)">Remove</button></li>
+    <ul *ngFor="let user of user_details">
+      <app-user-details [item]="user"></app-user-details>
     </ul>
-
-</body>
-
+  </body>
 </html>
