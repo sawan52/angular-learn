@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   versionNumber = 12;
-  displayData = 'default';
-
-  updateData(item: string) {
-    console.warn(item);
-    this.displayData = item;
-  }
+  name: any;
 }

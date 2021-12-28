@@ -1,7 +1,7 @@
 <html>
   <body>
     <h1 class="heading">Welcome to Angular {{ versionNumber }}</h1>
-    <h2>{{ displayData }}</h2>
-    <app-child (updateDataEvent)="updateData($event)"></app-child>
+    <input type="text" [(ngModel)]="name" />
+    <h2>{{ name }}</h2>
   </body>
 </html>
