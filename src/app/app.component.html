@@ -1,13 +1,7 @@
 <html>
   <body>
     <h1 class="heading">Welcome to Angular {{ versionNumber }}</h1>
-    <!--
-    <app-child [item]="data"></app-child>
-    <button (click)="updateChild()">Update Child Value</button>
-    -->
-
-    <ul *ngFor="let user of user_details">
-      <app-user-details [item]="user"></app-user-details>
-    </ul>
+    <h2>{{ displayData }}</h2>
+    <app-child (updateDataEvent)="updateData($event)"></app-child>
   </body>
 </html>
